@@ -11,9 +11,14 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Nunito Sans';
     background-color: ${props => props.theme.Background};
     color: ${props => props.theme.color};
-
-    .element{
-      background-color: ${props => props.theme.elements};
-    }
+   a{
+      color: ${props => props.theme.color};
+   }
+   .color{
+      color: ${props => props.theme.color};
+   }
+   .element{
+   background-color: ${props => props.theme.elements};
+   }
  }
 `

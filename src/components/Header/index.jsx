@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom"
 import { HeaderStyle } from "./style"
+import {BtnThema} from '../BtnThema'
+
 
 export const Header = ({handleClick, theme}) => {
     return(
@@ -8,10 +10,10 @@ export const Header = ({handleClick, theme}) => {
                 <div className="logo">
                     <a href="#">Where in the word?</a>
                 </div>
-                <div className="theme">
-                   <button onClick={handleClick}>{theme}</button>
+                <div className="theme" onClick={handleClick}>
+                    {theme == 'light' ? <BtnThema theme={theme}/> : <BtnThema theme={theme}/>}
                 </div>
             </div>
         </HeaderStyle>
-    )
+    );
 }
