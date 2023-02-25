@@ -14,11 +14,12 @@ export const GlobalStyle = createGlobalStyle`
    a{
       color: ${props => props.theme.color};
    }
-   .color{
+   .color, a, h1, h2, span{
       color: ${props => props.theme.color};
    }
    .element{
-   background-color: ${props => props.theme.elements};
+      background-color: ${props => props.theme.elements};
+      box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.1);;
    }
  }
 `
