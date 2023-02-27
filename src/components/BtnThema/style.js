@@ -13,5 +13,4 @@ export const BtnThemaStyle = styled.div`
         font-weight: 600;
         margin-left: 10px;
     }
-    
 `

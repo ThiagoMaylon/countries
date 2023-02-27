@@ -5,7 +5,7 @@ import { BtnThemaStyle } from './style'
 export const BtnThema = ({theme}) => {
     return(
         <BtnThemaStyle>
-            {theme == 'light' ? <BsFillSunFill className='color' size={30}/> : <BsFillMoonFill className='color' size={30}/>} 
+            {theme == 'light' ? <BsFillSunFill className='color' size={20}/> : <BsFillMoonFill className='color' size={20}/>} 
             <button className={` color`}>
                 {theme == 'light' ? "Light" : "Dark"} Mode
             </button>

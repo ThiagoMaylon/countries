@@ -11,7 +11,6 @@ export const HeaderStyle = styled.header`
         margin: 0 auto;
         width: 90%;
         height: 100%;
-
         .logo{
             a{
                 text-decoration: none;
