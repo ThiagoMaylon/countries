@@ -8,9 +8,9 @@ export const Card = ({img, countrie, population, region, capital}) => {
             </div>
             <div className="content">
                 <h2>{countrie}</h2>
-                <p><span>Population:</span> {population}</p>
-                <p><span>Region:</span> {region}</p>
-                <p><span>Capital:</span> {capital}</p>
+                <p className="color"><span>Population:</span> {population}</p>
+                <p className="color"><span>Region:</span> {region}</p>
+                <p className="color"><span>Capital:</span> {capital}</p>
             </div>
         </CardStyle>
     )
