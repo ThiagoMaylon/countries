@@ -4,6 +4,7 @@ import dataJson from '../../utils/data.json';
 import { HomeStyle } from "./style";
 import { BsSearch } from 'react-icons/bs'
 import { DropDown } from "../../components/DropDown";
+import { Link } from "react-router-dom";
 export const Home = () => {
     const [countries, setCountries] = useState(dataJson)
     const [isSelect, setIsSelect] = useState("")
@@ -32,21 +33,23 @@ export const Home = () => {
             </div>
             <div className="container">
                 {filter == "" ? countries.map((countrie, index) => (
-               <Card key={index}
-                countrie={countrie.name} 
-                img={countrie.flags.png} 
-                capital={countrie.capital}
-                population={countrie.population}
-                region={countrie.region}
-               />
+                <Link to={`/detail/${index}`} key={index}>
+                    <Card key={index}
+                        countrie={countrie.name} 
+                        img={countrie.flags.png} 
+                        capital={countrie.capital}
+                        population={countrie.population}
+                        region={countrie.region}
+                    />
+               </Link>
             )) : filter.map((countrie, index) => (
-                <Card key={index}
-                 countrie={countrie.name} 
-                 img={countrie.flags.png} 
-                 capital={countrie.capital}
-                 population={countrie.population}
-                 region={countrie.region}
-                />))}
+                    <Card key={index}
+                        countrie={countrie.name} 
+                        img={countrie.flags.png} 
+                        capital={countrie.capital}
+                        population={countrie.population}
+                        region={countrie.region}
+                    />))}
             </div>
         </HomeStyle>
     )

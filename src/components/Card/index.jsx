@@ -1,6 +1,7 @@
+
 import { CardStyle } from "./style"
 
-export const Card = ({img, countrie, population, region, capital}) => {
+export const Card = ({img, countrie, population, region, capital, id}) => {
     return(
         <CardStyle className="element">
             <div className="imagem">

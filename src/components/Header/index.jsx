@@ -8,7 +8,7 @@ export const Header = ({handleClick, theme}) => {
         <HeaderStyle className="element">
             <div className="container">
                 <div className="logo">
-                    <a href="#">Where in the word?</a>
+                    <h1>Where in the word?</h1>
                 </div>
                 <div className="theme" onClick={handleClick}>
                     {theme == 'light' ? <BtnThema theme={theme}/> : <BtnThema theme={theme}/>}

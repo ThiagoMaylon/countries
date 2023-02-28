@@ -4,6 +4,9 @@ export const CardStyle = styled.div`
     width: 250px;
     border-radius: 5px;
     margin: 30px;
+    a{
+        text-decoration: none;
+    }
     .imagem{
         margin: 0;
         img{

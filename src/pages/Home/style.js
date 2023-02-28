@@ -2,14 +2,33 @@ import styled from "styled-components";
 
 export const HomeStyle = styled.main`
     font-size: 14px;
+    a{
+        text-decoration: none;
+    }
     .form{
         width: 90%;
         margin: 30px auto;
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        @media (max-width: 700px) {
+            flex-direction: column;
+            align-items: flex-start;
+            .inputSe{
+                margin-bottom: 30px;
+            }
+            
+        }
+        @media (max-width: 450px) {
+            /* .inputSe{
+                width: 100%;
+            } */
+            
+        }
         .inputSe{
-            width: 400px;
+            max-width: 400px;
+            min-width: 200px;
             border-radius: 3px;
             display: flex;
             align-items: center;

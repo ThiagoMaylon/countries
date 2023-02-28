@@ -12,5 +12,10 @@ export const BtnThemaStyle = styled.div`
         font-size: 1rem;
         font-weight: 600;
         margin-left: 10px;
+        @media (max-width: 375px) {
+            font-size: 1rem;
+            margin-left: 5px;
+
+        }
     }
 `
